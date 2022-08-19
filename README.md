@@ -13,7 +13,7 @@ Template und Erklärung für FoldingAtHome in Docker für das #SchenklRadio Team
 
 ## Docker & Docker-compose installieren
 
-Offizielle Anleitung für Debian/Ubuntu: https://docs.docker.com/engine/install/ubuntu/
+Offizielle Anleitung für Debian/Ubuntu: https://docs.docker.com/engine/install/ubuntu/  
 Linux Mint ist hier gleichbedeutend mit Ubuntu.
 
 In Kürze:
