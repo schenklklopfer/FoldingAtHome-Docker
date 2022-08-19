@@ -1,6 +1,6 @@
 # FoldingAtHome-Docker
 
-Template und Erklärung für FoldingAtHome in Docker für das #SchenklRadio Team
+Vorlage und Erklärung für FoldingAtHome in Docker für das #SchenklRadio Team
 
 # Vorraussetzungen
 
