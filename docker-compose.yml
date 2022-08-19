@@ -1,0 +1,12 @@
+---
+version: "3"
+services:
+  folding-at-home:
+    image: yurinnick/folding-at-home:latest
+    environment:
+      - USER=
+      - PASSKEY=
+      - TEAM=263779
+      - ENABLE_GPU=false
+      - ENABLE_SMP=true
+    restart: unless-stopped
