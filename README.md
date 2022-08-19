@@ -44,7 +44,9 @@ In einem Terminal deiner Wahl folgendes eingeben:
 
 ## Daten in docker-compose.yml eintragen
 
-In dem gerade erstellten Verzeichnis "FoldingAtHome-Docker" liegt eine Datei mit dem Namen "docker-compose.yml" diese wird hier angepasst:
+In dem gerade erstellten Verzeichnis "FoldingAtHome-Docker" liegt eine Datei mit dem Namen "docker-compose.yml" diese wird hier angepasst:  
+Die Datei mit einem Texteditor deiner Wahl anpassen.  
+Wenn ihr schon im Terminal seid, kann das z.B. mit `nano docker-compose.yml` gemacht werden.  
 
 Den überlegten Namen bei "USER=" eintragen.  
 Den per E-Mail bekommenen Passkey bei "PASSKEY=" eintragen.
