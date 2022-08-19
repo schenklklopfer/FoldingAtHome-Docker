@@ -7,21 +7,25 @@ Template und Erklärung für FoldingAtHome in Docker für das #SchenklRadio Team
 - Linux
 - Docker
 - Docker-compose
+- Git
 - Internet (nach außen offene Ports: 80, 443, 8080)
 
 # Einrichtung
 
-## Docker & Docker-compose installieren
+## Docker & Docker-compose & git installieren
 
-Offizielle Anleitung für Debian/Ubuntu: https://docs.docker.com/engine/install/ubuntu/  
+Offizielle Docker-Installations-Anleitung für Debian/Ubuntu: https://docs.docker.com/engine/install/ubuntu/  
 Linux Mint ist hier gleichbedeutend mit Ubuntu.
+
+Ist Docker installiert, braucht ihr noch git, um an die Daten aus diesem Repository ranzukommen.  
+Installierbar mit jedem Paketmanager, gerne per GUI oder CLI, das Paket heißt `git`.  
 
 In Kürze:
 
 In einem Terminal deiner Wahl folgendes eingeben:  
 ```
 sudo apt update
-sudo apt install docker.io docker-compose
+sudo apt install -y docker.io docker-compose git
 ```
 
 ## Namen überlegen und merken
