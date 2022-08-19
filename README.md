@@ -71,7 +71,7 @@ services:
 ```
 ## Starten
 
-In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten:  
+In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten (falls noch nicht geschehen):  
 `cd FoldingAtHome-Docker`
 
 Mit folgendem Befehl wird der Prozess gestartet:  
@@ -79,7 +79,7 @@ Mit folgendem Befehl wird der Prozess gestartet:
 
 ## Status einsehen
 
-In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten:  
+In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten (falls noch nicht geschehen):  
 `cd FoldingAtHome-Docker`
 
 Mit folgendem Befehl wird der Fortschritt beobachtet:  
@@ -87,7 +87,7 @@ Mit folgendem Befehl wird der Fortschritt beobachtet:
 
 ## Beenden
 
-In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten:  
+In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten (falls noch nicht geschehen):  
 `cd FoldingAtHome-Docker`
 
 Mit folgendem Befehl wird der Fortschritt beobachtet:  
