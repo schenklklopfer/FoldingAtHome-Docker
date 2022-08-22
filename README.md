@@ -71,7 +71,6 @@ services:
       - ENABLE_GPU=false
       - ENABLE_SMP=true
     restart: unless-stopped
-
 ```
 ## Starten
 
@@ -79,7 +78,7 @@ In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten (falls no
 `cd FoldingAtHome-Docker`
 
 Mit folgendem Befehl wird der Prozess gestartet:  
-`docker-compose up -d`
+`sudo docker-compose up -d`
 
 ## Status einsehen
 
@@ -87,7 +86,7 @@ In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten (falls no
 `cd FoldingAtHome-Docker`
 
 Mit folgendem Befehl wird der Fortschritt beobachtet:  
-`docker-compose logs -f`
+`sudo docker-compose logs -f`
 
 ## Beenden
 
@@ -95,4 +94,50 @@ In einem Terminal deiner Wahl das vorhin geclonte Verzeichnis betreten (falls no
 `cd FoldingAtHome-Docker`
 
 Mit folgendem Befehl wird der Fortschritt beobachtet:  
-`docker-compose down`
+`sudo docker-compose down`
+
+
+## Einstellmöglichkeiten
+
+**Kleinere Jobs:**  
+
+Wollt ihr kleinere Jobs haben, die schneller durchgerechnet sind, könnt ihr folgendes in die "environment" Sektion angeben:  
+`      - POWER=light`
+
+Also sieht eure docker-compose.yml dann so aus:  
+
+```
+---
+version: "3"
+services:
+  folding-at-home:
+    image: yurinnick/folding-at-home:latest
+    environment:
+      - USER=asdf
+      - PASSKEY=0123
+      - TEAM=263779
+      - POWER=light
+      - ENABLE_GPU=false
+      - ENABLE_SMP=true
+    restart: unless-stopped
+```
+
+## Hinweise
+
+**Betrieb:**  
+
+Ihr solltet darauf achte ein Projekt immer zu 100% durchlaufen zu lassen.  
+Es früher zu beenden geht natürlich, aber i.d.R. fangt ihr am nächsten Tag von Vorne oder mit einem neuen Projekt an.  
+(Es kann funtkonieren, dass an einem Punkt weitergemacht wird, oder ihr ein paar Prozente verliert, muss es aber nicht)
+Weiter ist es sehr sinnvoll das zu tun, weil der Wissenschaft hauptsächlich an an einem Stück durchgerechnete Aufgaben nützlich sind.
+
+Diese Anleitung ist daher am Besten für Systeme geeignet, die 24/7 laufen.
+
+**Statistiken:**
+
+Die offizielle Statistikseite für das Team ist: https://stats.foldingathome.org/team/263779
+
+Die inoffizielle Statsitikseite mit viel mehr Details ist: https://folding.extremeoverclocking.com/team_summary.php?s=&t=263779
+
+Wenn ihr wissen wollt, für was ihr gerade Rechnleistung spendet, schaut mit `sudo docker-compose logs -f` nach, an welcher "Projekt-ID" ihr gerade beteiligt seid und fügt diese in folgenden Link ein: https://stats.foldingathome.org/project/<ID>  
+Z.B. dieses: https://stats.foldingathome.org/project/16959
