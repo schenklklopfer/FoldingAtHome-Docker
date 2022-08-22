@@ -122,6 +122,9 @@ services:
     restart: unless-stopped
 ```
 
+Wichtig, nach der Änderung an der docker-compose.yml müsst ihr den Prozess beenden und neu starten:
+`sudo docker-compose down && sudo docker-compose up -d`
+
 ## Hinweise
 
 **Betrieb:**  
